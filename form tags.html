@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> HTML | Form tags</title>
+    <style>
+        *{
+            font-family: verdana;
+            font-size: 20px;
+        }
+        form{
+            background: linear-gradient(45deg,coral,lightblue);
+            width: 700px;
+            padding: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+<h2>  input text</h2>
+<form>Name<input type="text"></form>
+<h2>  input password</h2>
+<form>
+    Password:<input type="password" readonly="readonly"
+>    </form>
+    <h2>input number</h2>
+    <form>Enter Age:<input type=number min=10 max=90 step=0.5</form>
+        <h2>input range</h2>
+        <form>Salary Range:<input type=range min=0 max=10000><span id=val>10000</form>
+            <h2>input Email</h2>
+            <form >Email:<input type="email"><br><br><input type=submit value=Register>
+            </form>
+            <h2>input checkbox</h2>
+         <form>sports:<input type="checkbox" name="sport" disabled="disabled">
+            Chess:<input type="checkbox" name="chess" >Crickets:<input type="checkbox" name="crickets">    </form> 
+            <h2>input radio</h2>
+            <form>
+            Gender:  Male<input type="radio" name="gender">
+            Female<input type="radio" name="gender"></form>
+            <h2>input image</h2>
+            <form><input type="image" src="images/back2.jpg" name="image" ></form>
+    </body>
+</html>

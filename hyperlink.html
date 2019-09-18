@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML | Links</title>    
+<style type="text/css">
+    body{
+        margin: 20px;
+    font-family: verdana;
+    }
+    /* descendent selector */
+    #nav a:link, #nav a:visited
+    {
+        border: 2px solid black;
+        font-size: 18px;
+        color: red;
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        padding: 7px 25px;
+        border-radius: 15px;
+        text-decoration: none;
+        background-color: antiquewhite;
+        /* background:linear-gradient(90deg,red,blue);*/
+    }
+    #nav a:hover{
+        background-color: blueviolet;
+        box-shadow: 0px 0px 15px black;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: justify;
+        margin: 20px;
+        line-height: 1.5;
+    }
+    </style>
+    </head>
+<body>
+    <div id="nav" style="width: 90%; margin: auto">
+        <!--global link between different page-->
+        <a href="https://www.google.com">Google</a>
+    <!--local link between page in the same site-->
+    <a href="aboutus.html">about us</a>
+    <a href="contactus.html">contact us</a>
+    <!--internal link within the page itself-->
+    <a href="#course">course</a>
+    </div>
+    <hr>
+    <p>Ne illum nostrud, o varias quem quid laborum. Consequat quem culpa do multos, 
+        quid officia familiaritatem. Culpa si tempor ut summis et iudicem quo dolor 
+        consequat. Excepteur lorem sint quo elit. Fore excepteur exquisitaque ex ut 
+        lorem a culpa. Fore est proident. Possumus sint expetendis si consequat sed 
+        iudicem, qui hic cohaerescant, nostrud do quid senserit.</p>
+    <!-- link for downloading a file from server location-->
+    <p>
+    <a href="software/npp.7.7.1.Installer.x64.exe">download </a>Notepad++
+    </p>
+    <img src="images/nature.jpg">
+    <!--defining anchor tags with bookmark--> 
+    <h1 id="course">course</h1>
+    
+    <ol type="1" start="3" reversed>
+<li>core java</li>
+<li>advance java</li>
+<li>hybernate</li>
+    <li>web services</li>
+    <li>spring</li>
+    <li>php</li>
+    </ol> 
+    <!--to link to top page an image can be a link-->
+    <a href=""><img src="images/top1.jpg" width="70px" height="70px"></a>
+    <hr>
+    <!--for sending an electronic mail-->
+    Email:
+    <a href="mailto:avi@gmail.com?cc=manager@gmail.com&bcc=director@gmail.com&subject=Feedback&body=My suggestions about the site:">info@avitech.com</a>
+    
+    </body>
+</html>
